@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conversor de Temperaturas</title>
+    <link REL="SHORTCUT ICON" HREF="https://portal.inmet.gov.br/uploads/icones/temperatura_maxima.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Temperaturas</h1>
+        <h2>Celsius e Fahrenheit</h2>
+        <div class="input-group">
+            <label for="temp">Temperatura:</label>
+            <input type="number" id="temp" placeholder="Digite a temperatura" />
+        </div>
+        <div class="input-group">
+            <label for="from">De:</label>
+            <select id="from">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="to">Para:</label>
+            <select id="to">
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="celsius">Celsius</option>
+            </select>
+        </div>
+        <button class="btn" onclick="convertTemperature()">Converter</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <footer class="footer">
+        <p>Desenvolvido por Renison Souza</p>
+        <a href="https://www.linkedin.com/in/renison-souza/" target="_blank">
+            <img src="https://img.freepik.com/icones-gratis/linkedin_318-187585.jpg" alt="LinkedIn">
+            <span>Perfil do LinkedIn</span>
+        </a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
